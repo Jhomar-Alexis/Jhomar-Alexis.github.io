@@ -1,0 +1,95 @@
+body{
+    margin:0;
+    padding:0;
+    background-image:url(../img/ciudad.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.title{
+    text-align:center;
+    text-transform:uppercase;
+    font-size:40px;
+    font-family:sans-serif;
+    color:white;
+    font-weight:bold;
+}
+
+.button{
+    background:orange;
+    font-size:20px;
+    text-transform:uppercase;
+    margin:25px;
+    padding:10px;
+    border-radius:10px;
+    width:180px;
+    box-shadow:0px 0px 20px 0px white;
+    border-bottom:20px;
+    position:fixed;
+    bottom:0;
+    right:0;
+}
+
+.button:hover{
+    background:yellow;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+a:hover{
+    color:black;
+    transition:0.3s;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+}
+
+p{
+    font-weight:bold;
+    color:rgb(255, 255, 255);
+    font-size:30px;
+}
+
+.comunicado{
+    background-image:url(../img/reloj.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    width:400px;
+    margin:0 auto;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0px 0px 20px 0px white;
+}
+
+.comunicado:hover{
+    background:#140606;
+    cursor:pointer;
+}
+
+@media (max-width: 900px){
+    .button{
+        font-size:15px;
+        width:130px;
+    }
+
+    .title{
+        font-size:30px;
+    }
+
+    .comunicado{
+        width:270px;
+    }
+
+    p{
+        font-size:20px;
+        margin:0;
+        text-align:center;
+    }
+}

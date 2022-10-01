@@ -1,0 +1,152 @@
+.skills{
+    max-width:980px;
+    margin:0 auto;
+}
+
+.skills-title{
+    color:black;
+    font-size:30px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.skills-skill{
+    font-size:20px;
+    font-weight:500;
+    box-shadow:0 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius:30px;
+    padding:0.5em 0.7em;
+    margin:10px;
+    text-align:center;
+}
+
+.fondo{
+    background-color:black;
+}
+
+.skills-list{
+    list-style:none;
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    color:white;
+}
+
+@media(min-width:950px){
+    .skills-title{
+        font-size:48px;
+        margin:10px;
+    }
+    
+    .skills-skill{
+        box-shadow:10px 0px gray;
+        font-size:30px;
+        margin:20px;
+        text-align:center;
+    }
+
+    .skills-list{
+        flex-wrap:nowrap;
+    }
+}
+
+/*barras de contacto*/
+main{
+    justify-content:center;
+    width:100%;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    cursor:pointer;
+}
+
+.icona{
+    position:relative;
+    width:80px;
+    height:80px;
+    margin:20px;
+    border-radius:50%;
+    transition:all .8s;
+}
+
+.icona:hover{
+    background-color:#1877f2;
+    box-Shadow:0 0 20px #1877f2;
+}
+
+.icona:hover:nth-child(2){
+    background-color:#e60073;
+    box-Shadow:0 0 20px #e60073;
+}
+
+.icona:hover:nth-child(3){
+    background-color:#25d366;
+    box-Shadow:0 0 20px #25d366;
+}
+
+.icona:hover:nth-child(4){
+    background-color:#61c3ff;
+    box-Shadow:0 0 20px #61c3ff;
+}
+
+.stroke{
+    stroke:black;
+}
+
+.icona i{
+    color:#000;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:2rem;
+}
+
+svg circle{
+    stroke-dasharray:150;
+    transition:all .8s ease-in-out;
+}
+
+.icona:hover circle{
+    stroke-dasharray:220;
+}
+
+@media(max-width:425px){
+    .sosa{
+        padding-top:5px;
+    }
+}
+@media(max-width:375px){
+    .sosa{
+        padding-top:5px;
+    }
+}
+@media(max-width:320px){
+    .sosa{
+        padding-top:5px;
+    }
+}
+@media(max-width:768px){
+    .sosa{
+        padding-top:5px;
+    }
+}
+
+@media(max-width:1021px){
+    .sosa{
+        padding-top:1px;
+    }
+}
+
+@media(max-width:950px){
+    .chero{
+        padding-top:350px;
+    } 
+}
+
+
+[data-aos^=fade][data-aos^=fade].aos-animate {   
+    transform: translateZ(0);
+}

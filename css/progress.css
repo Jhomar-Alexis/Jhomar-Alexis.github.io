@@ -1,0 +1,267 @@
+.fa-html5{
+    color:orange;
+    font-size:90px;
+}
+.fa-css3-alt{
+    color:blue;
+    font-size:90px;
+}
+.fa-square-js{
+    color:yellow;
+    font-size:90px;
+}
+.fa-bootstrap{
+    color:purple;   
+    font-size:90px;
+}
+.fa-react{
+    color:skyblue;
+    font-size:90px;
+}
+
+/*barras de progreso*/
+.subtitulo{
+    color:black;
+    font-size:30px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.all{
+    display:none;
+}
+
+.circle-wrap{
+    z-index:0;
+    display:grid;
+    grid-template-columns:repeat(1, 160px);
+    grid-gap:80px;
+    margin-left:30px;
+    width:150px;
+    height:150px;
+    background-color:gray;
+    border-radius:50%;
+    margin-top:10px;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3,
+.circle-wrap .circle .fill-4,
+.circle-wrap .circle .fill-5{
+    width:150px;
+    height:150px;
+    position:absolute;
+    border-radius:50%;
+}
+
+.circle-wrap .circle .mask{
+    clip:rect(0px, 150px, 150px, 75px);
+}
+
+.mask .fill-1{
+    clip:rect(0px, 75px, 150px, 0px);
+    background-color:rgb(255, 166, 0);
+}
+.mask.full-1,
+.circle .fill-1{
+    animation:fill-1 ease-in-out 3s;
+    transform:rotate(150deg);
+}
+
+@keyframes fill-1 {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(150deg);}
+}
+
+.mask .fill-2{
+    clip:rect(0px, 75px, 150px, 0px);
+    background-color:rgb(0, 0, 255);
+}
+.mask.full-2,
+.circle .fill-2{
+    animation:fill-1 ease-in-out 3s;
+    transform:rotate(110deg);
+}
+
+@keyframes fill-2 {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(110deg);}
+}
+
+.mask .fill-3{
+    clip:rect(0px, 75px, 150px, 0px);
+    background-color:rgb(255, 255, 0);
+}
+.mask.full-3,
+.circle .fill-3{
+    animation:fill-1 ease-in-out 3s;
+    transform:rotate(70deg);
+}
+
+@keyframes fill-3 {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(70deg);}
+}
+
+.mask .fill-4{
+    clip:rect(0px, 75px, 150px, 0px);
+    background-color:rgb(128, 0, 128);
+}
+.mask.full-4,
+.circle .fill-4{
+    animation:fill-1 ease-in-out 3s;
+    transform:rotate(90deg);
+}
+
+@keyframes fill-4 {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(90deg);}
+}
+
+.mask .fill-5{
+    clip:rect(0px, 75px, 150px, 0px);
+    background-color:rgb(135, 207, 235);
+}
+.mask.full-5,
+.circle .fill-5{
+    animation:fill-1 ease-in-out 3s;
+    transform:rotate(40deg);
+}
+
+@keyframes fill-5 {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(40deg);}
+}
+
+.inside-circle{
+    width:124px;
+    height:124px;
+    border-radius:50%;
+    background:white;
+    line-height:120px;
+    position:absolute;
+    margin-top:13px;
+    margin-left:13px;
+    z-index:100;
+    font-size:2em;
+    font-weight:700;
+    text-align:center;
+}
+
+/*barra de progreso para laptop*/
+@media(min-width:950px){
+    .subtitulo{
+        font-size:48px;
+    }
+    .sobre{
+        font-size:48px;
+        margin:20px;
+    }
+    .all{
+        display:flex; 
+        justify-content:center;
+    }
+    .caja{
+        display:none;
+    }
+}
+
+/*barra de progreso version cel*/
+.caja{
+    color:wheat;
+    width:88%;
+    position:absolute;
+    left:5%;
+    flex-wrap:wrap;
+}
+
+.contenedor{
+    width:95%;
+    padding:30px 10px 30px;
+    background:black;
+    border-radius:10px;
+    border:2px solid rgba(0, 0, 0, 0.06);
+    backdrop-filter:blur(10px);
+    box-shadow:0px 0px 20px 5px #140606;
+}
+
+.contenedor *{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.skell:not(:last-child){
+    margin-bottom:30px;
+}
+
+.detalles{
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.menuses{
+    position:relative;
+    border:1px solid cyan;
+    border-radius:20px;
+}
+
+.menuses div{
+    position:relative;
+    width:0;
+    height:8px;
+    border-radius:10px;
+}
+
+#html-menuses{
+    background-color:orange;
+    animation:html-barra 2s forwards;
+}
+@keyframes html-barra{
+    100%{
+        width:80%;
+    }
+}
+
+#css-menuses{
+    background-color:blue;
+    animation:css-barra 2s forwards;
+}
+@keyframes css-barra{
+    100%{
+        width:60%;
+    }
+}
+
+#java-menuses{
+    background-color:yellow;
+    animation:java-barra 2s forwards;
+}
+@keyframes java-barra{
+    100%{
+        width:40%;
+    }
+}
+
+#boot-menuses{
+    background-color:purple;
+    animation:boot-barra 2s forwards;
+}
+@keyframes boot-barra{
+    100%{
+        width:50%;
+    }
+}
+
+#react-menuses{
+    background-color:skyblue;
+    animation:react-barra 2s forwards;
+}
+@keyframes react-barra{
+    100%{
+        width:20%;
+    }
+}

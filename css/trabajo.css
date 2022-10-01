@@ -1,0 +1,108 @@
+.contenido{
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.clase{
+    width:250px;
+    height:250px;
+    position:relative;
+    overflow:hidden;
+    margin:20px;
+    border:5px solid white;
+    cursor:pointer;
+    border-radius:30px;
+    box-shadow:0px 0px 20px 5px #140606;
+}
+
+.clase img{
+    width:100%;
+    height:100%;
+}
+
+.capa{
+    font-size:20px;
+    position:absolute;
+    color:white;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    display:flex;
+    align-items:center;
+    transform:scale(0);
+    transition:.3s ease;
+}
+
+.clase:hover .capa{
+    transform:scale(1); 
+}
+p{
+    left:10px;
+    margin:10px;
+}
+
+h2{
+    left:16px;
+}
+
+.contenido2{
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.clase2{
+    width:250px;
+    height:250px;
+    position:relative;
+    overflow:hidden;
+    margin:20px;
+    border:5px solid white;
+    cursor:pointer;
+    border-radius:30px;
+    box-shadow:0px 0px 20px 5px #140606;
+}
+
+.clase2 img{
+    width:100%;
+    height:100%;
+    transition:3s;
+    filter:grayscale(1);
+}
+
+.clase2 img:hover{
+    transform:scale(1.1);
+    transition:2s;
+    filter:grayscale(0);
+}
+
+/*scroll personalizado*/
+.scroll::-webkit-scrollbar{
+    width:10px;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background:orange;
+    border-radius:5px;
+}
+
+.autor{
+    text-align:center;
+    background:black;
+    color:white;
+    padding:1px;
+    margin:0;
+    font-weight:bold;
+    box-shadow:4px 0px 25px black;
+}
